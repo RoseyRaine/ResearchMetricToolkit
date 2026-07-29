@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Field Weighted Citation Impact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../img/favicon.png" type="image/png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="../index.html">
+      <img class="csu-logo" src="../img/csu-crest.png" alt="Charles Sturt University">
+      <img src="../img/logo.svg" alt="Research Metrics Toolkit">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../metrics.html">Browse Metrics</a></li>
+      <li><a href="../resources.html">Resources</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../schema.html">Schema</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="page container">
+  <article class="card">
+    <h1>Field Weighted Citation Impact</h1>
+    <div class="content">
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Field Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Field Weighted Citation Impact</td>
+</tr>
+<tr>
+<td>Can Apply To</td>
+<td>Primarily journal articles, but also other kinds of research outputs, such as book chapters and conference proceedings that are sufficiently covered by abstract and citation databases.</td>
+</tr>
+<tr>
+<td>Metric Definition</td>
+<td>The Field Normalized Citation Impact (FNCI) is the ratio between the actual citations received by a publication and the average number of citations received by all other similar publications. The latter is referred to as the expected number of citations. Similar publications are ones in the same subject category, of the same type (i.e. article, review, book chapter, etc.), and of the same age (i.e. publication year).</td>
+</tr>
+<tr>
+<td>Metric Calculation</td>
+<td>A FNCI is measured by dividing the number of citations a publication received by the average number of citations to publications in a database published in the same year, of the same type, and within the same subject category. When multiple publications are being considered, the ratio between the actual and average citations for each publication are calculated first. A typical indicator is the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3081055/">Mean Normalized Citation Score (MNCS)</a>, which is the mean result of all FNCI of all publications included in the analysis. Publications can also be assigned to more than one subject category. <a href="https://www.elsevier.com/__data/assets/pdf_file/0020/53327/ELSV-13013-Elsevier-Research-Metrics-Book-r5-Web.pdf">In these cases, usually the publication and its citation counts are proportionally distributed across the relevant subject categories.</a></td>
+</tr>
+<tr>
+<td>Data Sources</td>
+<td>The FNCI is dependent on extensive citation and indexing information available in citation databases, such as Scopus and Web of Science. In addition to citation counts, these sources classify publications by year, type, and subject. Note that Clarivate's InCites/Web of Science platform calculates the same underlying concept under a different name: <strong>Category Normalized Citation Impact (CNCI)</strong>. FWCI (Elsevier/Scopus) and CNCI (Clarivate/Web of Science) are not identical numbers for the same publication, since they draw on different citation databases and subject classification systems, but they measure the same thing &mdash; a publication's citation performance relative to similar publications &mdash; and should not be treated as two different metrics when comparing figures from different sources.</td>
+</tr>
+<tr>
+<td>Appropriate Use Cases</td>
+<td><a href="https://arxiv.org/ftp/arxiv/papers/1507/1507.02099.pdf">The FNCI was conceived to facilitate the benchmarking of citation performance across groups of different size, disciplinary scope, and age</a>, such as research large groups, institutions, or geographic regions. It is meant to correct for the different disciplinary patterns of scholarly communication and publication age can have on non-normalized metrics, such as citation counts. The global mean of the FNCI is 1.0, so it is easy to compare a set of values to a benchmark. For example, an FNCI of 1.50 means 50% more cited than the world average; whereas, an FWCI of 0.75 means 25% less cited than the world average.</td>
+</tr>
+<tr>
+<td>Limitations</td>
+<td>The FNCI is typically presented as a mean value (e.g. Mean Normalized Citation Score) for an aggregation of papers (e.g. individual scholars, a journal, a university, etc.), which can be strongly influenced by outliers. <a href="https://arxiv.org/ftp/arxiv/papers/1507/1507.02099.pdf">The distribution of citations across publications is often highly skewed. Most publication in a sample will receive relatively low citation attention, while a small set will accumulate high citation rates. Indicators based on highly cited publications are usually an alternative to mean-based indicators. Additionally, the FNCI may be sensitive to the field classification system chosen for the analysis, particularly when the classification is not at the publication-level but at the journal-level (e.g. Web of Science Subject Categories or the Scopus All Science Journal Classification (AJSC).</a></td>
+</tr>
+<tr>
+<td>Inappropriate Use Cases</td>
+<td>Like for most citation analysis, citation-based metrics should not be interpreted as a direct measure of research quality.</td>
+</tr>
+<tr>
+<td>Available Metric Sources</td>
+<td>Article level FNCI values are available in Scopus (Field Weighted Citation Index - FWCI), and other bibliometric sources (e.g. Web of Science, Dimensions, Google Scholar) provide possibilities of similarly calculated field-normalized citation based metrics.</td>
+</tr>
+<tr>
+<td>Transparency</td>
+<td>The FNCI’s calculation is a well known methodology in bibliometric practice. The FNCI is dependent upon a publication’s classification by discipline, publication type, and year. While the year and type of publication are recorded and verifiable, discipline assignments are not always available.</td>
+</tr>
+<tr>
+<td>Website</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Timeframe</td>
+<td>The FNCI may be subject of different ‘citation windows.’ Typically, it uses citation data from the year of publication plus 3 years, although more extensive (i.e. larger than 3 years) or variable citation windows (i.e. considering all subsequent publication years available after the publication year) are possible.</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    <p class="post-meta">Updated on 28 Jul 2026</p>
+  </article>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>This site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+    <p class="footer-compliance">Charles Sturt University &ndash; TEQSA Provider Identification: PRV12018 (Australian University). CRICOS Provider: 00005F.</p>
+    <p class="footer-credit">Adapted from the <a href="https://web.archive.org/web/20241122181517/https://www.metrics-toolkit.org/">Metrics Toolkit</a> by Robin Champieux, Heather Coates, Stacy Konkiel and the Metrics Toolkit Editorial Board, under CC&nbsp;BY&nbsp;4.0. Branding and design have been changed from the original.</p>
+  </div>
+</footer>
+<script src="../js/site.js"></script>
+
+</body>
+</html>

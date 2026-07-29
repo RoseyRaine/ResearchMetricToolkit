@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Authorship position and citation impact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../img/favicon.png" type="image/png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="../index.html">
+      <img class="csu-logo" src="../img/csu-crest.png" alt="Charles Sturt University">
+      <img src="../img/logo.svg" alt="Research Metrics Toolkit">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../metrics.html">Browse Metrics</a></li>
+      <li><a href="../resources.html">Resources</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../schema.html">Schema</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="page container">
+  <article class="card">
+    <h1>Authorship position and citation impact</h1>
+    <div class="content">
+<p>This metric builds on <a href="field_weighted_citation_impact.html">Field Weighted Citation Impact</a> by filtering a researcher's publication set according to their position in the author list, most commonly first-named author or last-named/senior author, before calculating the average FWCI for that subset.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Field Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Authorship position and citation impact</td>
+</tr>
+<tr>
+<td>Can Apply To</td>
+<td>An individual researcher's body of work, filtered by their recorded position in the author byline of each publication.</td>
+</tr>
+<tr>
+<td>Metric Definition</td>
+<td>A breakdown of a researcher's publications and their average Field Weighted Citation Impact (FWCI) according to authorship position &mdash; typically first-named author (often associated with having led the research and writing) or last-named author (in many fields, associated with a senior or supervisory role). Reporting FWCI by author position allows a researcher to demonstrate the citation impact of the work they specifically led, rather than an average across all publications regardless of their role in them.</td>
+</tr>
+<tr>
+<td>Metric Calculation</td>
+<td>Publications are first filtered to those where the researcher is recorded in the relevant author position (first or last named). The average FWCI is then calculated across that subset, using the same FWCI methodology as for the researcher's full publication set. The number and percentage of these publications falling in the top 10% or top 1% by citation percentile is often reported alongside the average.</td>
+</tr>
+<tr>
+<td>Data Sources</td>
+<td>SciVal and Scopus (Elsevier), via the Authorship Position workbook/module, which allows filtering of a researcher's publication set by author position.</td>
+</tr>
+<tr>
+<td>Appropriate Use Cases</td>
+<td>Useful in promotion and grant applications for demonstrating leadership and impact in a researcher's own led work, distinct from their contribution as a middle author or collaborator on someone else's project. Particularly relevant in disciplines with conventions around author-list ordering (e.g. many STEM and health fields), where first and last position carry specific meaning.</td>
+</tr>
+<tr>
+<td>Limitations</td>
+<td>Author-position conventions vary significantly by discipline &mdash; in some fields (e.g. many humanities and social science fields, and increasingly some sciences using alphabetical or contribution-based ordering) author position does not reliably indicate seniority or leadership. Where a journal or field uses alphabetical ordering, this analysis is not meaningful and should not be used.</td>
+</tr>
+<tr>
+<td>Inappropriate Use Cases</td>
+<td>Should not be applied without first confirming that authorship-order conventions in the researcher's discipline actually signal leadership or seniority. Should not be used to compare researchers across disciplines with different authorship conventions.</td>
+</tr>
+<tr>
+<td>Available Metric Sources</td>
+<td>SciVal (Elsevier) Authorship Position module/workbook.</td>
+</tr>
+<tr>
+<td>Transparency</td>
+<td>The underlying FWCI calculation is well documented (see the Field Weighted Citation Impact page); the filtering by author position depends on author-order metadata being correctly recorded in Scopus, which is generally reliable but not always accurate for older or non-standard publications.</td>
+</tr>
+<tr>
+<td>Website</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Timeframe</td>
+<td>Can be calculated over any publication window (e.g. last 10 years, career total), consistent with how FWCI is reported elsewhere.</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    <p class="post-meta">Updated on 28 Jul 2026</p>
+  </article>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>This site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+    <p class="footer-compliance">Charles Sturt University &ndash; TEQSA Provider Identification: PRV12018 (Australian University). CRICOS Provider: 00005F.</p>
+    <p class="footer-credit">Adapted from the <a href="https://web.archive.org/web/20241122181517/https://www.metrics-toolkit.org/">Metrics Toolkit</a> by Robin Champieux, Heather Coates, Stacy Konkiel and the Metrics Toolkit Editorial Board, under CC&nbsp;BY&nbsp;4.0. Branding and design have been changed from the original.</p>
+  </div>
+</footer>
+<script src="../js/site.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>h-index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../img/favicon.png" type="image/png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="../index.html">
+      <img class="csu-logo" src="../img/csu-crest.png" alt="Charles Sturt University">
+      <img src="../img/logo.svg" alt="Research Metrics Toolkit">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../metrics.html">Browse Metrics</a></li>
+      <li><a href="../resources.html">Resources</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../schema.html">Schema</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="page container">
+  <article class="card">
+    <h1>h-index</h1>
+    <div class="content">
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Field Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>h-index</td>
+</tr>
+<tr>
+<td>Can Apply To</td>
+<td>Authors</td>
+</tr>
+<tr>
+<td>Metric Definition</td>
+<td>An author-level metric (although it can also be calculated for any aggregation of publications, e.g. journals, institutions, etc.) calculated from the count of citations to an author’s set of publications.</td>
+</tr>
+<tr>
+<td>Metric Calculation</td>
+<td>In his <a href="https://www.pnas.org/content/102/46/16569.abstract">2005 paper proposing the h-index</a>, Hirsch describes the measure thusly: “A scientist has index h if h of his or her Np papers have at least h citations each and the other (Np – h) papers have fewer than ≤ h citations each.” For example, an author with an h-index of 6 has at least six journal articles that have each been cited at least six times each.</td>
+</tr>
+<tr>
+<td>Data Sources</td>
+<td>Citation data used to calculate the h-index can be retrieved from Google Scholar, Scopus, Web of Science, Dimensions or any other citation index that includes author- and article-level citation information.</td>
+</tr>
+<tr>
+<td>Appropriate Use Cases</td>
+<td>The h-index has been used as evidence of the scholarly influence of an author’s, or group of authors’, body of work. It is best used in conjunction with other metrics, if at all. Use of the h-index for groups occurs infrequently in practice.</td>
+</tr>
+<tr>
+<td>Limitations</td>
+<td>Many <a href="https://doi.org/10.1002/asi.20609">limitations to the h-index</a> have been identified by experts. The h-index varies by discipline due to varying norms of publishing speed and quantity. Since it does not take into account the longevity of a scholar’s career, it benefits more experienced scholars over early-career individuals. The h-index is unable to differentiate between active and inactive scientists, and is biased towards productive researchers in detriment of selective ones. The h-index is also relatively insensitive to highly cited papers. Many have attempted to fix the h-index’s weaknesses with various computational models that, for example, <a href="https://en.wikipedia.org/wiki/G-index">reward highly-cited papers</a>, <a href="https://blogs.plos.org/biologue/2012/10/19/why-i-love-the-h-index/">correct for career length</a>, <a href="https://www.researchgate.net/publication/228565700_Percentile_rank_and_author_superiority_indexes_for_evaluating_individual_journal_articles_and_the_author%27s_overall_citation_performance/file/9c960514b234c1e9fb.pdf">rank authors’ papers against other papers published in the same year and source</a>, or <a href="https://www.researchgate.net/publication/227606297_Are_there_better_indices_for_evaluation_purposes_than_the_h_index_A_comparison_of_nine_different_variants_of_the_h_index_using_data_from_biomedicine/file/9c9605285b46881dab.pdf">count just the average citations of the most high-impact “core” of an author’s work</a>. However, none of these improvements upon the h-index have been as widely adopted as the h-index itself.</td>
+</tr>
+<tr>
+<td>Inappropriate Use Cases</td>
+<td>The h-index should not be used as a sole metric of scholarly impact, nor should it be used as a direct measure of quality. The h-index should not be used to rank authors who are in different disciplines or those at different stages of their careers.</td>
+</tr>
+<tr>
+<td>Available Metric Sources</td>
+<td>The h-index can be manually calculated, or you can retrieve it from <a href="https://scholar.google.com/">Google Scholar</a>, <a href="https://www.elsevier.com/solutions/scopus">Scopus</a>, or <a href="https://webofknowledge.com/">Web of Science</a>.</td>
+</tr>
+<tr>
+<td>Transparency</td>
+<td>The formula for calculating the h-index is openly available. See <a href="https://en.wikipedia.org/wiki/H-index">https://en.wikipedia.org/wiki/H-index</a></td>
+</tr>
+<tr>
+<td>Website</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Timeframe</td>
+<td>All time</td>
+</tr>
+</tbody>
+</table>
+<p>Portions of this guide borrow from “<a href="https://blogs.lse.ac.uk/impactofsocialsciences/2014/03/31/four-reasons-to-stop-caring-so-much-about-the-h-index/">Four reasons to stop caring so much about the h-index</a>” by Stacy Konkiel and are reused here under a CC-BY license.</p>
+    </div>
+    <p class="post-meta">Updated on 10 Aug 2026</p>
+  </article>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>This site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+    <p class="footer-compliance">Charles Sturt University &ndash; TEQSA Provider Identification: PRV12018 (Australian University). CRICOS Provider: 00005F.</p>
+    <p class="footer-credit">Adapted from the <a href="https://web.archive.org/web/20241122181517/https://www.metrics-toolkit.org/">Metrics Toolkit</a> by Robin Champieux, Heather Coates, Stacy Konkiel and the Metrics Toolkit Editorial Board, under CC&nbsp;BY&nbsp;4.0. Branding and design have been changed from the original.</p>
+  </div>
+</footer>
+<script src="../js/site.js"></script>
+
+</body>
+</html>
