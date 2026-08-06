@@ -272,3 +272,134 @@ h1 { font-size: 1.9rem; margin: 0 0 1.5rem; }
   transform: translateY(-2px);
   text-decoration: none;
 }
+
+
+/* ---------- interactive CTA ---------- */
+.interactive-cta {
+  padding: 2.5rem 0 0;
+  overflow: visible;
+}
+
+.motion-card {
+  text-align: center;
+  padding: 2.75rem 2rem;
+  overflow: visible;
+}
+
+.motion-kicker {
+  margin: 0 0 .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .82rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.motion-title {
+  display: inline-block;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.15;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 700;
+  margin: 0 auto 1rem;
+  max-width: 12ch;
+}
+
+.motion-title:hover,
+.motion-title:focus {
+  color: var(--primary-dark);
+}
+
+.motion-char,
+.motion-space {
+  display: inline-block;
+}
+
+.motion-char {
+  transition: transform .22s ease, color .18s ease;
+  will-change: transform;
+}
+
+.motion-support {
+  max-width: 760px;
+  margin: 0 auto 1.5rem;
+}
+
+.motion-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.text-link {
+  color: var(--text-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.text-link:hover,
+.text-link:focus {
+  color: var(--primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ---------- footer ---------- */
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+}
+
+.footer-license {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-license p,
+.footer-compliance,
+.footer-credit {
+  margin: 0;
+}
+
+.license-badge {
+  flex: 0 0 auto;
+  display: inline-flex;
+}
+
+.license-badge img {
+  display: block;
+  width: 132px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .motion-card { padding: 1.75rem 1.25rem; }
+  .motion-title { max-width: 100%; }
+  .motion-actions { flex-direction: column; gap: .75rem; }
+  .footer-license {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-char,
+  .metric-card,
+  .btn {
+    transition: none;
+  }
+}

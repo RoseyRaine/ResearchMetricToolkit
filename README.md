@@ -8,7 +8,7 @@ Original content by Robin Champieux, Heather Coates, Stacy Konkiel and the Metri
 ## Contents
 
 - `index.html` — homepage with site-wide search (works offline, no backend)
-- `metrics.html` — browse all 26 metrics
+- `metrics.html` — browse all 37 metrics
 - `metrics/*.html` — one page per metric
 - `about.html`, `schema.html`, `resources.html`
 - `css/`, `js/`, `img/` — self-contained assets (no CDNs, no external fonts)
