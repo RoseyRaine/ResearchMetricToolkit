@@ -25,38 +25,30 @@
   </nav>
 </header>
 <main>
-<section class="hero">
-  <div class="container hero-inner">
-    <img class="hero-banner" src="img/banner.svg" alt="Research Metrics Toolkit">
+<section class="hero hero-home">
+  <div class="container hero-inner home-hero-inner">
+    <h1 class="hero-title">
+      <a href="metrics.html" class="hero-motion-title js-motion-title" data-text="Research Metrics Toolkit" aria-label="Browse metrics in the Research Metrics Toolkit">Research Metrics Toolkit</a>
+    </h1>
     <p class="tagline">Helping you navigate the research metrics landscape</p>
-    <div class="search-wrap">
-      <input id="search" type="search" placeholder="Search" autocomplete="off"
-             aria-label="Search the Metrics Toolkit">
-      <ul id="search-results" hidden></ul>
-    </div>
-  </div>
-</section>
-<section class="interactive-cta">
-  <div class="container">
-    <div class="card motion-card">
-      <p class="motion-kicker">Interactive call to action</p>
-      <h2 class="sr-only">Research Metrics Toolkit</h2>
-      <a href="metrics.html" class="motion-title js-motion-title" data-text="Research Metrics Toolkit" aria-label="Browse metrics in the Research Metrics Toolkit">
-        Research Metrics Toolkit
-      </a>
-      <p class="motion-support">Move your cursor across the title to create a wave effect. On touch devices, the title animates when it appears and responds to tap before taking you to Browse Metrics.</p>
-      <div class="motion-actions">
-        <a href="metrics.html" class="btn">Browse Metrics</a>
-        <a href="about.html" class="text-link">About the toolkit</a>
+
+    <div class="home-options" aria-label="Research Metrics Toolkit options">
+      <div class="home-option explore-option">
+        <h2>Explore Metrics</h2>
+        <p>Browse guidance on individual research metrics and what they measure.</p>
+        <a href="metrics.html" class="btn">Explore Metrics</a>
+      </div>
+
+      <div class="home-option search-option">
+        <h2>Search Metrics</h2>
+        <p>Search for a metric, measure or source.</p>
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Search metrics" autocomplete="off"
+                 aria-label="Search the Metrics Toolkit">
+          <ul id="search-results" hidden></ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="page container">
-  <div class="card cta">
-    <h2>Explore Metrics</h2>
-    <p>Learn more about specific research impact metrics and what they measure.</p>
-    <a href="metrics.html" class="btn">Explore</a>
   </div>
 </section>
 </main>
